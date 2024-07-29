@@ -1,0 +1,175 @@
+:root{
+    --back-color:#1f2631;
+    --fron-color:#313a49;
+    --head-line:#50ffab;
+    --text:#b2c0cc;
+}
+body{
+background-color: var(--back-color);
+color: white;
+font-family: "Outfit", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 50px;
+width: 100%;
+height: 100vh;
+margin: 0;
+padding: 0;
+}
+
+.inside-container{
+    background-color: var(--fron-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+border-radius: 12px;
+width: 40%;
+height: 40%;
+margin: 50px;
+position: relative;
+
+}
+button{
+background-color: var(--head-line);
+border-radius: 80%;
+width: 60px;
+height: 60px;
+border: none;
+position: absolute;
+bottom: 0;
+transform: translateY(50%);
+transition: all .3s;
+}
+button:hover{
+cursor: pointer;
+background-color:violet
+}
+h1{
+    color: var(--text);
+    font-size: 30px;
+    padding: 20px 0px;
+}
+h3{
+    margin: 0;
+letter-spacing: 5px;
+color: var(--head-line);
+font-size: medium;
+}
+
+.fa-dice-five{
+    color: var(--back-color);
+}
+
+/* toast */
+
+#status {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#toast {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    transform: translateX(-50%);
+    background-color: #f32d2d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#toast.hidden {
+    display: none;
+}
+
+#toast-icon {
+    margin-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+/*  */
+
+  .divider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100px;
+    
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 2px;
+    background-color: var(--text);
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }
+  
+  .pause-button {
+    position: relative;
+    background-color: var(--fron-color); /* Green color for the button */
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: translateY(-10%);
+  }
+  
+  .pause-button i {
+    color:var(--text);
+
+    font-size: 20px;
+    font-weight: bolder;
+    
+  }
+  
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+.inside-container{
+    width: 100%;
+    margin: 5%;
+    height: auto;
+    
+}
+}

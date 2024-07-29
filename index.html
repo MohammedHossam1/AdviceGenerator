@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Outfit:wght@100..900&family=Reem+Kufi+Fun:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        right: 0%;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="inside-container">
+      <h3 id="advice-num">Advice #</h3>
+      <h1 id="advice">Click on Button</h1>
+      <div class="divider">
+        <button class="pause-button">
+            <i class="fa fa-pause"></i>
+        </button>
+    </div>
+      <button id="adviceButton"><i class="fas fa-dice-five fa-2x"></i></button>
+
+
+    </div>
+
+
+
+
+    <div id="toast" class="hidden">
+      <span id="toast-icon">📶</span>
+      <span id="toast-message">You are offline</span>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://mohammedhossam.vercel.app">Mohammed Hossam</a>.
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
